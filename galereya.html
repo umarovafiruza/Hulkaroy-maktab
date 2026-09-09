@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galereya — Mening Maktabim</title>
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <span><i class="fa-solid fa-location-dot"></i> Toshkent sh., Chilonzor tumani, 10-mavze</span>
+        <a href="tel:+998712000000"><i class="fa-solid fa-phone"></i> +998 (71) 200-00-00</a>
+        <span><i class="fa-solid fa-clock"></i> Dush - Shan: 08:00 - 17:00</span>
+      </div>
+      <div class="topbar-right">
+        <span class="flag-accent"><i class="fa-solid fa-shield-halved"></i> Rasmiy Davlat Portali</span>
+        <a href="https://e-maktab.uz" target="_blank" class="btn-emaktab"><i class="fa-solid fa-graduation-cap"></i> EMaktab</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-emblem">
+          <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">MENING MAKTABIM</span>
+          <span class="logo-subtitle">1-Sonli Umumta'lim Maktabi</span>
+        </div>
+      </a>
+
+      <div class="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Bosh sahifa</a>
+        </li>
+        <li class="nav-item">
+          <a href="maktab-haqida.html" class="nav-link">Maktab haqida</a>
+        </li>
+
+        <!-- Jamoa Dropdown -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">Jamoa <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="rahbariyat.html" class="dropdown-link"><i class="fa-solid fa-user-tie"></i> Rahbariyat</a></li>
+            <li><a href="oqituvchilar.html" class="dropdown-link"><i class="fa-solid fa-chalkboard-user"></i> O‘qituvchilar</a></li>
+          </ul>
+        </li>
+
+        <!-- O'quvchilar Dropdown -->
+        <li class="nav-item">
+          <a href="#" class="nav-link">O‘quvchilar <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="iqtidorli-oquvchilar.html" class="dropdown-link"><i class="fa-solid fa-star"></i> Iqtidorli o‘quvchilar</a></li>
+            <li><a href="yutuqlar.html" class="dropdown-link"><i class="fa-solid fa-trophy"></i> Yutuqlar</a></li>
+          </ul>
+        </li>
+
+        <!-- Media Dropdown -->
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Media <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="galereya.html" class="dropdown-link active"><i class="fa-solid fa-images"></i> Galereya</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="aloqa.html" class="nav-link">Aloqa</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Foto Galereya</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Bosh sahifa</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>Media</span>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>Galereya</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- FULL GALLERY SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Maktab Hayotidan Lavhalar</span>
+        <h2 class="section-title">Fotosuratlar Albomi</h2>
+        <p class="section-desc">Rasmni ustiga bosib, kattalashtirilgan holatda ko'rishingiz mumkin</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Barchasi</button>
+        <button class="filter-btn" data-filter="tadbirlar">Tadbirlar</button>
+        <button class="filter-btn" data-filter="oquv">O'quv Jarayoni</button>
+        <button class="filter-btn" data-filter="bino">Maktab Binosi</button>
+        <button class="filter-btn" data-filter="sport">Sport & To'garaklar</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="tadbirlar">
+          <img src="rasmlar/3a3533d4-97f0-4f9d-9dba-532d74e309e5.jfif" alt="Tadbir">
+          <div class="gallery-overlay">
+            <h4>Mustaqillik Bayrami Tadbiri</h4>
+            <span>Tadbirlar</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="oquv">
+          <img src="rasmlar/57e83e9d-5ece-4df9-a0e5-6743b44f7da4.jfif" alt="Dars">
+          <div class="gallery-overlay">
+            <h4>Kimyo Laboratoriya Darsi</h4>
+            <span>O'quv Jarayoni</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bino">
+          <img src="rasmlar/6944aecd-35b2-4b2e-bee8-e007a5546d4e.jfif" alt="Bino">
+          <div class="gallery-overlay">
+            <h4>Zamonaviy Maktab Hovlisi</h4>
+            <span>Maktab Binosi</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="oquv">
+          <img src="rasmlar/6a0cd8da-267a-4c2b-9be0-e509b9e75b8e.jfif" alt="Kutubxona">
+          <div class="gallery-overlay">
+            <h4>Maktab Axborot-Kutubxona Markazi</h4>
+            <span>O'quv Jarayoni</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="sport">
+          <img src="rasmlar/6cb39c3c-2526-448b-87e6-b92da33fb39f.jfif" alt="Sport">
+          <div class="gallery-overlay">
+            <h4>"Quvnoq Startlar" Sport Musobaqasi</h4>
+            <span>Sport & To'garaklar</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bino">
+          <img src="rasmlar/738ad817-95a4-4378-ab28-e46b210bca10.jfif" alt="Sinfxona">
+          <div class="gallery-overlay">
+            <h4>Zamonaviy Kompyuter Sinfxonasi</h4>
+            <span>Maktab Binosi</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tadbirlar">
+          <img src="rasmlar/b3694a8c-2611-48eb-b41b-b47a6d73edf0.jfif" alt="Navro'z">
+          <div class="gallery-overlay">
+            <h4>Navro'z Umumxalq Bayrami</h4>
+            <span>Tadbirlar</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="oquv">
+          <img src="rasmlar/b966d027-e214-4864-b016-eb5d206a6fec.jfif" alt="O'quvchilar">
+          <div class="gallery-overlay">
+            <h4>Interaktiv O'yinlar va Darslar</h4>
+            <span>O'quv Jarayoni</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="sport">
+          <img src="rasmlar/bd8b40b4-3952-49c8-9eb6-49067b5aa24b.jfif" alt="Shaxmat">
+          <div class="gallery-overlay">
+            <h4>Shaxmat To'garagi Mashg'uloti</h4>
+            <span>Sport & To'garaklar</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tadbirlar">
+          <img src="rasmlar/c145a5cc-135e-4ce4-906a-1112bdb4649a.jfif" alt="Bitiruv">
+          <div class="gallery-overlay">
+            <h4>"So'nggi Qo'ng'iroq" Tadbiri</h4>
+            <span>Tadbirlar</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bino">
+          <img src="rasmlar/c538b982-3723-49d5-b782-8a0697990e42.jfif" alt="Sportzal">
+          <div class="gallery-overlay">
+            <h4>Keng va Yoritilgan Sport Zali</h4>
+            <span>Maktab Binosi</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="oquv">
+          <img src="rasmlar/d9be3436-b16e-4da6-80dc-3be4231d1a27.jfif" alt="Tajriba">
+          <div class="gallery-overlay">
+            <h4>Fizika Laboratoriya Tajribasi</h4>
+            <span>O'quv Jarayoni</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo">
+            <div class="logo-emblem" style="width: 40px; height: 40px; font-size: 1.2rem;">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title" style="color: white; font-size: 1.1rem;">MENING MAKTABIM</span>
+              <span class="logo-subtitle">1-Sonli Umumta'lim Maktabi</span>
+            </div>
+          </div>
+          <p>
+            O'zbekiston Respublikasi Maktab va Maktabgacha ta'lim vazirligi tasarrufidagi zamonaviy davlat ta'lim muassasasi. High-quality education for future generations.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Tezkor Havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Bosh sahifa</a></li>
+            <li><a href="maktab-haqida.html"><i class="fa-solid fa-chevron-right"></i> Maktab haqida</a></li>
+            <li><a href="rahbariyat.html"><i class="fa-solid fa-chevron-right"></i> Rahbariyat</a></li>
+            <li><a href="oqituvchilar.html"><i class="fa-solid fa-chevron-right"></i> O'qituvchilar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">O'quvchilarga</h4>
+          <ul class="footer-links">
+            <li><a href="iqtidorli-oquvchilar.html"><i class="fa-solid fa-chevron-right"></i> Iqtidorli o'quvchilar</a></li>
+            <li><a href="yutuqlar.html"><i class="fa-solid fa-chevron-right"></i> Yutuqlarimiz</a></li>
+            <li><a href="galereya.html"><i class="fa-solid fa-chevron-right"></i> Foto Galereya</a></li>
+            <li><a href="https://e-maktab.uz" target="_blank"><i class="fa-solid fa-chevron-right"></i> EMaktab Tizimi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Bog'lanish</h4>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-location-dot"></i> Toshkent sh., Chilonzor 10</li>
+            <li><i class="fa-solid fa-phone"></i> +998 (71) 200-00-00</li>
+            <li><i class="fa-solid fa-envelope"></i> info@1maktab.uz</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 1-Sonli Umumta'lim Maktabi. Barcha huquqlar himoyalangan.</p>
+        <p>Modern Government Web Standard Uslubida Ishlab Chiqilgan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
